@@ -15,6 +15,26 @@ local MainSection = Main:NewSection("Main")
 local AutoFarmSection = AutoFarm:NewSection("AutoFarm")
 
 runfunc(function()
+    MainSection:NewToggle("faster speed", "fast speed", function(state)
+        if state then
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+        else
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+        end
+    end)
+end)
+
+runfunc(function()
+    MainSection:NewToggle("gravity 0", "", function(state)
+        if state then
+            game.Workspace.Gravity = 0
+        else
+            game.Workspace.Gravity = 196.2
+        end
+    end)
+end)
+
+runfunc(function()
     local BlowBubbles = false
     AutoFarmSection:NewToggle("AutoBlow", "auto blows bubbles 4 u", function(state)
         if state then
@@ -53,7 +73,6 @@ runfunc(function()
     end)    
 end)
 
---[[
 local Hatching2
 AutoFarmSection:NewToggle("MultiHatch 4 fun", "auto hatches egg for u", function(state)
     if state then
@@ -72,4 +91,3 @@ AutoFarmSection:NewToggle("MultiHatch 4 fun", "auto hatches egg for u", function
         Hatching2 = false
     end
 end)
---]]
