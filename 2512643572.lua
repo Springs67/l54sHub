@@ -6,7 +6,7 @@ local function runfunc(func)
 end
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("l54s's Hub - Bubble Gum Simulator", "Ocean")
+local Window = Library.CreateLib("l54s's Hub - Bubble Gum Simulator", "GrapeTheme")
 
 local Main = Window:NewTab("Main")
 local AutoFarm = Window:NewTab("AutoFarm")
