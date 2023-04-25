@@ -1,9 +1,9 @@
 local games = "Bubble Gum Simulator and Free Hatchers"
 
 if game.PlaceId == 11162791099 then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Springs67/l54sHub/3kdIKfmsdSf/11162791099.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Springs67/l54sHub/3kdIKfmsdSf/games/11162791099.lua"))()
 elseif game.PlaceId == 2512643572 then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Springs67/l54sHub/3kdIKfmsdSf/2512643572.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Springs67/l54sHub/3kdIKfmsdSf/games/2512643572.lua"))()
 else
     game.StarterGui:SetCore("SendNotification", {
 		Title = "l54sHub";
