@@ -1,0 +1,8 @@
+function notify(name, desc, time1)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = name;
+		Text = desc;
+		Duration = time1;
+	})
+end
+return notify()
